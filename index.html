@@ -4,20 +4,23 @@
 
     </head>
     <body>
-        <p>finding the largest  umberf with the help of arguements </p>
-        <p id = "result"></p>
+        <p>sum of elements and math objects </p>
+        <p id = "demo"></p>
         <script>
-            function findMax(){
-                var i;
-                var max = 0;
-                for(i = 0; i < arguments.length; i++){
-                    if(arguments[i] > max){
-                        max = arguments[i];
-                    }
+            function sumALL() {
+                var sum = 0;}
+                for (i = 0; i < arguments.length; i++) {
+                   sum += arguments[i];
+                   return sum;
+
                 }
-                return max;
-            }
-            document.getElementById("result").innerHTML = "the largest number is " + findMax(4, 5, 6);
-            </script>
+                document.getElementById("demo").innerHTML = sumALL(1, 223, 3431, 442, 513, 61);
+            var value = Math.sin(45);
+                document.write("Sin 45 is : " + value + "<br>");
+                var value1 = Math.cos(45);
+                document.write("Cos 45 is : " + value1 + "<br>");
+                var value2 = Math.tan(45);
+                document.write("Tan 45 is : " + value2 + "<br>");
+         </script>
     </body>
 </html>
